@@ -459,7 +459,8 @@ module.exports = function (grunt) {
       'concat',
       'ngmin',
       'copy:dist',
-      'cdnify',
+      // TODO: renable when supported, see item:814
+      // 'cdnify',
       'cssmin',
       'uglify',
       'rev',
