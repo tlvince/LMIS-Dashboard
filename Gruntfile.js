@@ -446,8 +446,9 @@ module.exports = function (grunt) {
   grunt.registerTask('build', function (target) {
     var ngct = 'dev';
 
-    if (target === 'prod')
+    if (target === 'prod') {
       ngct = 'prod';
+    }
 
     grunt.task.run([
       'clean:dist',
@@ -466,7 +467,7 @@ module.exports = function (grunt) {
       'rev',
       'usemin',
       'htmlmin'
-    ])
+    ]);
   });
 
   grunt.registerTask('default', [
